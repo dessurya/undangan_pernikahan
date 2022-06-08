@@ -1,0 +1,182 @@
+body{
+	padding: 0;
+	margin: 0;
+
+	background-image: radial-gradient(rgb(255, 255, 255) 15%, rgb(246, 181, 181) 90%);
+}
+.box{
+	position: relative;
+	width: 100%;
+	display: table;
+}
+.box .frame{
+	position: relative;
+	width: 100%;
+	display: table-row;
+}
+.box .frame .content{
+	position: relative;
+	display: table-cell;
+	height: 100vh;
+	vertical-align: middle;
+}
+
+.content img.bunga{
+	position: absolute;
+	width: 20%;
+}
+.content img#b1.bunga{
+	bottom: 10px;
+	left: 10px;
+}
+.content img#b2.bunga{
+	bottom: 10px;
+	right: 10px;
+}
+.content img#b3.bunga{
+	top: 10px;
+	left: 10px;
+}
+.content img#b4.bunga{
+	top: 10px;
+	right: 10px;
+}
+
+#navigation{
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+}
+#navigation .wraper{
+	position: relative;
+	margin: 0 auto;
+	width: 450px;
+	border: 2px solid rgb(246, 181, 181);
+	border-radius: 15px;
+}
+#navigation .wraper .box .frame .content{
+	font-size: 12pt;
+	font-family: 'Asap', sans-serif;
+	text-align: center;
+	height: 25px;
+}
+#navigation .wraper .box .frame .content label{
+	cursor: pointer;
+	color: rgb(246, 181, 181);
+	transition: .51s;
+}
+#navigation .wraper .box .frame .content label.active,
+#navigation .wraper .box .frame .content label:hover{
+	color: rgb(81, 12, 4);
+}
+
+#sampul{
+	text-align: center;
+	font-family: 'Dancing Script', sans-serif;
+}
+#sampul h1{
+	font-size: 32pt;
+	color: rgb(81, 12, 4);
+	margin: 0;
+	margin-bottom: 30px;
+}
+#sampul h3{
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 16pt;
+}
+#sampul p{
+	margin: 0;
+	font-size: 14pt;
+}
+
+#sampul img{
+	width: 300px;
+}
+
+#undangan{
+	text-align: center;
+	font-size: 10pt;
+	font-family: 'Asap', sans-serif;
+}
+#undangan img#bismillah{
+	width: 200px;
+}
+#undangan img#assalamualaikum{
+	width: 400px;
+}
+#undangan #sambutan, #undangan #kehormatan{
+	width: 475px;
+	margin: auto;
+}
+#undangan .box,#undangan .box .frame{
+	margin: 0 auto;
+	width: 500px;
+}
+#undangan .box.first .frame .content{
+	height: 135px;
+}
+#undangan .box.second .frame .content{
+	height: 85px;
+}
+#undangan h1, #undangan h2, #undangan h3{
+	margin: 0;
+	margin-bottom: 15px;
+	font-family: 'Dancing Script', sans-serif;	
+}
+#undangan p{
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+#lokasi div{
+	width: 650px; 
+	margin: 0 auto; 
+	text-align: center; 
+	font-family: 'Asap', sans-serif;
+}
+
+@media (max-width: 780px){
+	.box .frame .content{
+		min-height: 100vh;
+	}
+	#navigation .wraper{
+		width: 365px;
+	}
+	#sampul img{
+		width: 130px;
+	}
+	#undangan{
+		padding: 60px 0 80px;
+	}
+	#lokasi{
+		padding: 60px 0 80px;
+	}
+	#lokasi div{
+		width: 450px; 
+	}
+}
+
+@media (max-width: 480px) {
+	#navigation .wraper{
+		width: 235px;
+	}
+	#sampul img{
+		width: 300px;
+	}
+	#undangan img#bismillah{
+		width: 170px;
+	}
+	#undangan img#assalamualaikum, #undangan #sambutan, #undangan #kehormatan{
+		width: 265px;
+	}
+	#undangan .box, #undangan .box .frame{
+		width: 340px;
+	}
+	#undangan .box.first p{
+		font-size: 10pt;
+	}
+	#lokasi div{
+		width: 310px;
+	}
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="title" content="The Wedding Tifla and Ardyanto">
+	<meta name="description" content="The Wedding Tifla and Ardyanto | 15 September 2019 08.00 AM - 13.00 PM | Aula M.Latief Hendradiningrat, Gedung Dewi Sartika Universitas Negeri Jakarta, Rawamangun, Jakarta Timur">
+
+
+	<meta property="og:type" content="Website" />
+	<meta property="og:title" content="The Wedding Tifla and Ardyanto">
+	<meta property="og:description" content="The Wedding Tifla and Ardyanto | 15 September 2019 08.00 AM - 13.00 PM | Aula M.Latief Hendradiningrat, Gedung Dewi Sartika Universitas Negeri Jakarta, Rawamangun, Jakarta Timur">
+	<meta property="og:image" content="logo.png">
+	<meta property="og:image:url" content="logo.png">
+	<meta property="og:image:secure_url" content="logo.png">
+
+	<title>The Wedding Tifla and Ardyanto</title>
+	<link rel="icon" type="image/png" href="logo.png"/>
+	
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+	
+	<script type="text/javascript" src="jquery-3.2.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css?v=001">
+</head>
+<body>
+	<div class="box">
+		<div class="frame">
+			<div id="section" class="content">
+				<div id="sampul" class="target" style="">
+					<h1>Tifla &<br>Ardyanto</h1>
+					<img src="logo.png">
+					<h3>15.09.2019</h3>
+					<p>The Wedding Invitation</p>
+				</div>
+
+				<div id="undangan" class="target" style="display: none;">
+					<img id="bismillah" src="bismillah.png"><br>
+					<img id="assalamualaikum" src="assalamualaikum.png"><br>
+					<p id="sambutan">
+						Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelengarakan pernikahan putra - putri kami:
+					</p>
+					<div class="box first">
+						<div class="frame">
+							<div class="content">
+								<h1>Tifla Daniati</h1>
+								<p>Putri Keempat dari</p>
+								<p>Bapak Hardi dan Ibu Nining</p>
+							</div>
+							<div class="content">
+								<h1>Ardyanto Jatmiko</h1>
+								<p>Putra Pertama dari</p>
+								<p>Bapak Tumijan dan Ibu Tumini</p>
+							</div>
+						</div>
+					</div>
+					<p>yang isya Allah akan dilaksanakan pada:</p>
+					<div class="box second">
+						<div class="frame">
+							<div class="content">
+								<h3>Akad</h3>
+								<p>08.00 WIB S/D Selesai</p>
+							</div>
+							<div class="content">
+								<h2>Minggu 15 September 2019</h2>
+							</div>
+							<div class="content">
+								<h3>Resepsi</h3>
+								<p>11.00 WIB S/D 13.00 WIB</p>
+							</div>
+						</div>
+					</div>
+					<p id="kehormatan">Kehadiran Bapak/Ibu/Saudara(i) untuk memberikan do'a restu kepada kedua mempelai merupakan suatu kehormatan dan kebahagian bagi kami</p>
+				</div>
+
+				<div id="lokasi" class="target" style="display: none;">
+					<div>
+						<h2>Lokasi</h2>
+						<p>Aula M.Latief Hendradiningrat, Gedung Dewi Sartika Universitas Negeri Jakarta, Rawamangun, Jakarta Timur</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.523471674484!2d106.8760138!3d-6.1944471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f492ca142207%3A0x328d8954be8fbc58!2sGedung+Rektorat!5e0!3m2!1sid!2sid!4v1564382118133!5m2!1sid!2sid" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<img id="b1" class="bunga" src="bunga01.png">
+				<img id="b2" class="bunga" src="bunga02.png">
+				<img id="b3" class="bunga" src="bunga03.png">
+				<img id="b4" class="bunga" src="bunga04.png">
+
+				<div id="navigation">
+					<div class="wraper">
+						<div class="box">
+							<div class="frame">
+								<div class="content">
+									<label class="active" data-target="sampul">Sampul</label>
+								</div>
+								<div class="content">
+									<label class="" data-target="undangan">Undangan</label>
+								</div>
+								<div class="content">
+									<label class="" data-target="lokasi">Lokasi</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#navigation label').click(function(){
+				$('#navigation label').removeClass('active');
+				$(this).addClass('active');
+				$('.target').hide();
+				var target = $(this).data('target');
+				$('#'+target).show();
+			});
+		});
+	</script>
+</body>
+</html>

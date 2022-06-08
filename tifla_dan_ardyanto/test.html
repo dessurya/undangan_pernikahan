@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>test</title>
+	<script type="text/javascript" src="jquery-3.2.0.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var data = null;
+			$.ajax({
+		      // url: 'http://localhost:7777/npk-apis/public/MDM/v1/country/view',
+		      url: 'http://10.88.48.140/MDM/v1/country/view',
+		      data: data,
+		      crossDomain: true,
+		      type: 'post',
+		      dataType: 'json',
+		      success: function(data) {
+		        console.log(data);
+		      }
+		    });
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+body{
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+}
+@font-face {
+    font-family: 'Aulyars-Italic';
+    src: url('font/Aulyars-Italic.otf');
+}
+@font-face {
+    font-family: 'Aulyars-Regular';
+    src: url('font/Aulyars-Regular.otf');
+}
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('font/Quicksand-Bold.ttf');
+}
+@font-face {
+    font-family: 'Quicksand-Medium';
+    src: url('font/Quicksand-Medium.ttf');
+}
+@font-face {
+    font-family: 'Quicksand-Light';
+    src: url('font/Quicksand-Light.ttf');
+}
+.clearfix{
+	clear: both;
+}
+
+#wrapper{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+#wrapper img#hana-left{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 290px;
+}
+#wrapper img#hana-right{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 230px;
+}
+#wrapper #space{
+	position: relative;
+	padding: 35px 0;
+}
+#wrapper #border{
+	border: dashed .5px rgb(34,34,34);
+	margin: 0 auto;
+	width: 95%;
+}
+#wrapper #border #title{
+	position: relative;
+	margin: 0 auto;
+	top: -40px;
+	width: 250px;
+	padding: 10px 20px;
+	background-color: white;
+	text-align: center;
+	color: rgb(0,0,0);
+}
+#wrapper #border #title h1{
+	position: relative;
+    font-family: 'Aulyars-Regular';
+    font-size: 48px;
+	margin: 0;
+}
+#wrapper #border #contain{
+	position: relative;
+	display: table;
+	width: 100%;
+	margin-top: -30px;
+}
+#wrapper #border #contain .bar{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	height: 75vh;
+}
+#wrapper #border #contain .bar.sub{
+	width: 30%;
+}
+#wrapper #border #contain .bar.sub h3{
+	margin: -5px auto;
+	text-align: center;
+    font-family: 'Aulyars-Italic';
+    font-size: 40px;
+}
+#wrapper #border #contain .bar.sub h3 img#large{
+	width: 65px;
+	height: 65px;
+}
+#wrapper #border #contain .bar.sub h3 img#little{
+	width: 35px;
+	height: 35px;
+}
+#wrapper #border #contain .bar.sub p{
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+    font-family: 'Quicksand-Medium';
+}
+#wrapper #border #contain .bar.sub p label{
+    font-family: 'Quicksand-Bold';
+}
+#wrapper #border #contain .bar.sub p a{
+	color: black;
+	text-decoration: none;
+	position: relative;
+    font-family: 'Aulyars-Italic';
+    font-size: 25px;
+}
+#wrapper #border #contain .bar.sub p a img{
+	position: absolute;
+	height: auto;
+	left: -20px;
+}
+#wrapper #border #contain .bar.sub p a img#large{
+	width: 45px;
+	top: -10px;
+}
+#wrapper #border #contain .bar.sub p a img#little{
+	width: 25px;
+	top: 20px;
+}
+
+#wrapper #border #contain .bar.main{
+	width: 40%;
+	text-align: center;
+}
+#wrapper #border #contain .bar.main .click-show,
+#wrapper #border #contain .bar.main .click-show label,
+#wrapper #border #contain .bar.main .click-show img{
+	cursor: pointer;
+}
+#wrapper #border #contain .bar.main img{
+	width: 80%;
+}
+#wrapper #border #contain .bar.main h2{
+    font-family: 'Quicksand-Bold';
+	margin: 20px auto;
+	text-align: center;
+}
+#wrapper #border #contain .bar.main h2 img{
+	height: 20px;
+	width: 20px;
+}
+#wrapper #border #bottom{
+	position: relative;
+	text-align: center;
+    margin-bottom: 5px;
+}
+#wrapper #border #bottom label{
+    font-family: 'Quicksand-Light';
+}
+
+#wrapper #border #contain .bar.main #descript{
+	width: 100%;
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
+/*active*/
+#wrapper #border #contain.active .bar.main h2,
+/*#wrapper #border #contain.active .bar.sub,*/
+#wrapper #border #contain.active .bar.main,
+#wrapper #border #contain.active .bar.main img,
+#wrapper #border #contain.active .bar.main h2 img,
+#wrapper #border #contain.active .bar.main #descript{
+	/*transition: all 2.11s;*/
+}
+
+#wrapper #border #contain.active .bar.main h2{
+	 visibility: hidden;
+	 opacity: 0;
+	 font-size: 0;
+	 margin: 0;
+}
+#wrapper #border #contain.active .bar.sub{
+	width: 0;
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
+#wrapper #border #contain.active .bar.main{
+	width: 100%;
+}
+#wrapper #border #contain.active .bar.main img{
+	width: 15%;
+}
+#wrapper #border #contain.active .bar.main h2 img{
+	height: 0px;
+	width: 0px;
+}
+#wrapper #border #contain.active .bar.main #descript{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+    font-family: 'Quicksand-Bold';
+    display: block;
+}
+#wrapper #border #contain.active .bar.main #descript .float{
+	display: inline-block;
+	width: 35%;
+	margin: 0 auto;
+}
+#wrapper #border #contain.active .bar.main #descript p.font{
+	font-family: 'Aulyars-Italic';
+	font-size: 20px;
+}
+#wrapper #border #contain.active .bar.main #descript p.font a{
+	text-decoration: none;
+	color: black;
+
+}
+#wrapper #border #contain.active .bar.main #descript h3,
+#wrapper #border #contain.active .bar.main #descript p{
+	margin: 5px auto;
+}
+/*active*/
+
+@media (max-width: 780px) and (min-width: 480px){
+	#wrapper img#hana-right{
+		height: 120px;
+	}
+	#wrapper img#hana-left{
+		height: 135px;
+	}
+
+	#wrapper #border #title h1{
+		font-size: 36px;
+	}
+
+	#wrapper #border #contain{
+		margin-top: -65px;
+	}
+
+	#wrapper #border #contain .bar.sub h3{
+		position: relative;
+		width: 60%;
+		margin: 0 auto;
+	}
+	#wrapper #border #contain .bar.sub h3 img{
+		position: absolute;
+		top: 0;
+	}
+	#wrapper #border #contain .bar.sub h3 img#large{
+		width: 40px;
+		height: 40px;
+		left: 0;
+	}
+	#wrapper #border #contain .bar.sub h3 img#little{
+		width: 20px;
+		height: 20px;
+		right: 0;
+	}
+	#wrapper #border #contain .bar.sub p{
+		font-size: 12px;
+	}
+
+	#wrapper #border #bottom{
+		width: 65%;
+		margin: 0 auto;
+	}
+
+	#wrapper #border #bottom label{
+		font-size: 12px;
+	}
+	#wrapper #border #contain.active .bar.main #descript{
+		width: 100%;
+		margin: 0 auto;
+		font-size: 10px;
+	}
+	#wrapper #border #contain.active .bar.main img{
+		width: 10%;
+	}
+	#wrapper #border #contain.active .bar.main #descript hr{
+		/*display: none;*/
+	}
+	#wrapper #border #contain.active .bar.main #descript .float{
+		/*display: block;*/
+		/*float: left;*/
+		width: 100%;
+		/*height: 125px;*/
+	}
+	body{
+		overflow-y: auto;
+	}
+	#wrapper img#hana-left,
+	#wrapper img#hana-right{
+		position: fixed;
+	}
+}
+@media (max-width: 480px) {
+	body{
+		overflow-y: hidden;
+	}
+	#wrapper #border{
+		min-height: 90vh;
+	}
+
+	#wrapper #border #title h1{
+		font-size: 36px;
+	}
+
+	#wrapper img#hana-right{
+		height: 130px;
+	}
+	#wrapper img#hana-left{
+		height: 160px;
+	}
+
+
+	#wrapper #border #bottom{
+		position: absolute;
+		bottom: 5vh;
+		margin-bottom: 0;
+		z-index: 1;
+		padding: 10px 5px;
+	    background: rgba(255,255,255,.6);
+	}
+
+	#wrapper #border #contain .bar{
+		display: block;
+		height: auto;
+	}
+	#wrapper #border #contain .bar.sub,
+	#wrapper #border #contain .bar.main{
+		width: 100%;
+	}
+
+	#wrapper #border #contain .bar.main img{
+		width: 70%;
+	}
+	#wrapper #border #contain .bar.main h2{
+		margin-top: 5px;
+		margin-bottom: 20px;
+	}
+
+	#wrapper #border #contain .bar.sub h3{
+		position: relative;
+		width: 60%;
+		margin: 0 auto;
+		font-size: 28px;
+	}
+	#wrapper #border #contain .bar.sub h3 img{
+		position: absolute;
+		top: 0;
+	}
+	#wrapper #border #contain .bar.sub h3 img#large{
+		width: 40px;
+		height: 40px;
+		left: 0;
+	}
+	#wrapper #border #contain .bar.sub h3 img#little{
+		width: 20px;
+		height: 20px;
+		right: 0;
+	}
+	#wrapper #border #contain .bar.sub p{
+		font-size: 12px;
+	}
+	
+	#wrapper #border #bottom label{
+		font-size: 12px;
+	}
+	#wrapper #border #contain.active .bar.main #descript{
+		margin: 0 auto;
+		width: 95%;
+		font-size: 14px;
+	}
+	#wrapper #border #contain.active .bar.main #descript .float{
+		display: block;
+		width: 100%;
+	}
+	#wrapper #border #contain.active .bar.main #descript hr{
+		display: none;
+	}
+}
+
+#wrapper #border #contain .bar.main img{
+	-webkit-animation: zoom 1.51s ease-in-out infinite alternate;
+    animation: zoom 1.51s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(.94, .94);
+    }
+    to {
+        -webkit-transform: scale(1, 1);
+    }
+}
+
+@keyframes zoom {
+   from {
+	    transform: scale(1, 1);
+   }
+   to {
+		transform: scale(.94, .94);
+   }
+}

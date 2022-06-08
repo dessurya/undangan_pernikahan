@@ -1,0 +1,224 @@
+body{
+	padding: 0;
+	margin: 0;
+	transition: all 2.51s;
+	background-color: rgb(255, 175, 175);
+}
+.hana{
+	position: fixed; 
+	width: 30%;
+}
+.hana.tl{
+	top:0;
+	left: 0;
+}
+.hana.br{
+	bottom:0;
+	right: 0;
+}
+
+/* public */
+	.wrapper{
+		position: relative;
+		width: 100%;
+		height: 100vh;
+	}
+	.text-center{
+		text-align: center;
+	}
+	.text-left{
+		text-align: left;
+	}
+	.text-right{
+		text-align: right;
+	}
+	.tab{
+		display: table;
+	}
+	.tab .midle{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.row{
+		position: relative;
+	}
+	.row .bar{
+		position: relative;
+		width: 49.5%;
+		margin: 0 auto;
+		display: inline-grid;
+	}
+	.row .bar-3{
+		position: relative;
+		width: 30%;
+		margin: 0 auto;
+		display: inline-grid;	
+	}
+	.pad{
+		width: 75%;
+		margin: 0 auto;
+		height: 100vh;
+	}
+/* public */
+
+
+	.box-one{
+		width: 100%;
+	}
+	.absoluth.love{
+		position: fixed;
+		width: 100%;
+		top: 235px;
+		left: 0;
+		z-index: 1;
+	}
+	.box-one img#top,
+	.box-one img#bottom{
+		width: 50%;
+		z-index: -1;
+	}
+	img#love{
+		position: relative;
+		cursor: pointer;
+		width: 95px;
+		animation: zoom 1.51s ease-in-out infinite alternate;
+		-webkit-animation: zoom 1.51s ease-in-out infinite alternate;
+	}
+	.box-one img.seluit{
+		width: 100px;
+	}
+	.box-one img.chevron{
+		margin: 10px 0;
+		width: 60px;
+		cursor: pointer;
+	}
+	.box-one img.couple{
+		width: 45px;
+	}
+	.box-one .wrap-sel{
+		position: relative;
+		width: 45%;
+		margin: 0 auto;
+	}
+	.box-one .tab,
+	.box-one .tab .midle{
+		position: relative;
+		width: 100%;
+		height: 100vh;
+	}
+	.box-one h1,
+	.box-one h3,
+	.box-one h4{
+		margin: 10px 0;
+	}
+
+	.triger{
+		cursor: pointer;
+	}
+	.triger img{
+		transition: all 1.51s;
+	}
+	#to_resepsi.active img{
+		transform: rotate(90deg);
+	}
+	#to_akad.active img{
+		transform: rotate(-90deg);
+	}
+	#to_main.active img:nth-child(odd){
+		transform: rotateY(180deg);
+	}
+	#to_main.active img:nth-child(even){
+		transform: rotateY(180deg);
+	}
+
+	#main,
+	#main-st,
+	#main-nd,
+	#akad,
+	#resepsi{
+		transition: all 1.51s;
+	}
+	#main-nd,
+	#akad,
+	#resepsi{
+		display: none;
+		transform: rotateY(90deg);
+	}
+
+	img#assalamualaikum{
+		width: 45%;
+	}
+@media screen and (max-width: 736px)/* and (min-width: 528px)*/ { /* Mobile landscape */
+	img#assalamualaikum{
+		width: 75%;
+	}
+	p{
+		font-size: 1em;
+	}
+	.hana{
+		width: 225px;
+		opacity: .6;
+	}
+	.pad {
+		width: 85%;
+	}
+
+	.box-one .wrap-sel{
+		width: 85%;
+	}
+	.box-one .wrap-sel.button{
+		width: 95%;
+	}
+	.box-one .absoluth.love{
+		position: relative;
+		top: 0;
+	}
+	.absoluth.love{
+		top: 35vh;
+	}
+	.absoluth.love img#love{
+		width: 60px;
+	}
+
+	.box-one img.seluit{
+		width: 50px;
+	}
+
+	.box-one img.chevron{
+		width: 45px;
+	}
+	.box-one img.couple{
+		width: 30px;
+	}
+
+	.box-one h4{
+		font-size: 1em;
+	}
+
+	.row .bar{
+		width: 48%;
+	}
+}
+
+/* animate */
+	@-webkit-keyframes zoom {
+		    from {
+		        -webkit-transform: scale(1, 1);
+		    }
+		    50% {
+		        -webkit-transform: scale(.94, .94);
+		    }
+		    to {
+		        -webkit-transform: scale(1, 1);
+		    }
+		}
+
+		@keyframes zoom {
+		   from {
+			    transform: scale(1, 1);
+		   }
+		   to {
+				transform: scale(.94, .94);
+		   }
+		}
+/* animate */
