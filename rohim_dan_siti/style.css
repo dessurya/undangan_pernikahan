@@ -1,0 +1,263 @@
+/* scroller */
+	/* scroller browser */
+		::-webkit-scrollbar {
+			width: 5px;
+			height: 5px;
+		}
+	/* scroller browser */
+
+	/* Track */
+		::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 5px rgb(255, 252, 219);
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+		}
+	/* Track */
+
+	/* Handle */
+		::-webkit-scrollbar-thumb {
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		background: rgb(255, 252, 219);
+		-webkit-box-shadow: inset 0 0 6px rgb(255, 252, 219);
+		}
+		::-webkit-scrollbar-thumb:window-inactive {
+		background: rgb(255, 252, 219);
+		}
+	/* Handle */
+/* scroller */
+
+/*other*/
+	body{
+		padding: 0;
+		margin: 0;
+		font-family: 'Tinos', serif;
+		background-color: #d0e7d2;
+	}
+	div{
+		position: relative;
+	}
+	p{
+		line-height: 1.6;
+	}
+
+	.tab{
+		width: 100%;
+		display: table;
+	}
+	.tab .row{
+		width: 100%;
+		display: table-row;
+	}
+	.tab .row .cel{
+		vertical-align: middle;
+		display: table-cell;
+	}
+
+	.absoluth{
+		position: absolute;
+	}
+	.fullwidth{
+		width: 100%;
+	}
+	.text-center{
+		text-align: center;
+	}
+	.text-left{
+		text-align: left;
+	}
+	.text-right{
+		text-align: right;
+	}
+	.color-primary{
+		color: #79ac78;
+	}
+	#detail .color-primary{
+		color: #b0d9b1;
+	}
+	.box-back{
+		background-color: rgba(0,0,0,.6);
+		padding: 3px;
+		border-radius: 3px;
+	}
+	.color-violet{
+		color: #b0d9b1;
+	}
+	#floatmns{
+		position: fixed;
+		width: 125px;
+		right: 0;
+		top: -40px;
+	}
+/*other*/
+
+/*#page01*/
+	#page01{
+		height: 657px;
+	}
+	#page01 #box{
+		position: relative;
+		width: 80%;
+		margin: 0 auto;
+	}
+	#page01 h1#pernikahan{
+		font-size: 36pt;
+		font-family: 'Pacifico', cursive;
+		margin: 0;
+		margin-bottom: 2em;
+	}
+	#page01 #logo{
+		z-index: -1;
+		top: 0;
+	}
+	#page01 #logo img#ine{
+	    height: 558px;
+	    width: 571px;
+	}
+	#page01 #name{
+		margin: 25px auto 0;
+		width: 710px;
+	}
+	#page01 #name h2{
+		margin: 0 0 10px;
+		font-size: 26pt;
+	}
+	#page01 #name p{
+		font-size: 12pt;
+		font-weight: bold;
+		width: 230.75px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	#page01 #date{
+		margin-top: 60px;
+	}
+	#page01 #date h2{
+		width: 325px;
+		margin: 0 auto;
+		font-size: 20pt;
+	}
+	#page01 #address{
+		margin: 0 auto;
+		margin-top: 3.5em;
+		width: 580px;
+	}
+	#page01 #address h2,
+	#page01 #address p{
+		margin: 5px;
+	}
+/*#page01*/
+
+/*#page02*/
+	#page02 #bismillah{
+		width: 320px;
+	}
+	#page02 #assalamualaikum{
+		width: 480px;
+	}
+	#page02 #desc{
+		width: 615px;
+		margin: 20px auto;
+	}
+	#page02 #name{
+		border: .5px dashed rgb(238, 130, 238);
+		margin: 0 auto;
+		width: 650px;
+	}
+	#page02 #name .cel{
+		padding: 0 5px;
+	}
+	#page02 #name p{
+		padding: 4px;
+	}
+	#page02 #detail{
+		background-color: #618264;
+		padding: 5px;
+		margin-top: 40px;
+	}
+	#page02 #detail #time{
+		width: 75%;
+		margin: 0 auto;
+	}
+	#page02 #detail #time .cel{
+		width: 33.33%;
+	}
+/*#page02*/
+
+@media (max-width: 812px) { /* Mobile landscape and potrait */
+	#floatmns{
+		width: 90px;
+		top: -20px;
+	}
+	/*#page01*/
+		#page01{
+			height: unset;
+		}
+		#page01 h1#pernikahan{
+			font-size: 32pt;
+		}
+		#page01 #box{
+			width: 350px;
+		}
+		#page01 #logo img#ine{
+			height: unset;
+			width: 100%;
+		}
+		#page01 #name{
+			width: 100%;
+		}
+		#page01 #name h2{
+			font-size: 20pt;
+		}
+		#page01 #name p{
+			display: none;
+		}
+		#page01 #date{
+			margin-top: 10px;
+		}
+		#page01 #address{
+			width: 325px;
+			margin-top: 75px;
+		}
+	/*#page01*/
+	/*#page02*/
+		#page02{
+			margin-top: 40px;
+		}
+		#page02 #bismillah,
+		#page02 #assalamualaikum{
+			width: 75%;
+		}
+		#page02 #desc,
+		#page02 #name{
+			width: 85%
+		}
+		#page02 #name .float{
+			top: 20px;
+			left: 37.5%;
+			display: unset;
+			position: absolute;
+		}
+		#page02 #name h2{
+			font-size: 16pt;
+		}
+		#page02 #name p{
+			font-size: 8pt;
+		}
+		#page02 #detail{
+			padding-bottom: 20px;
+		}
+		#page02 #detail p{
+			width: 85%;
+			margin: 0 auto;
+		}
+		#page02 #detail .tab,
+		#page02 #detail .tab .row,
+		#page02 #detail .tab .row .cel{
+			display: unset;
+		}
+		#page02 #detail .tab .row .cel.hide{
+			display: none;
+		}
+	/*#page02*/
+}
